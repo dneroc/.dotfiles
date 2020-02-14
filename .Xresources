@@ -9,21 +9,22 @@ URxvt.matcher.button: 1
 
 
 URxvt.geometry: 90x21 
-URxvt.internalBorder:20
+URxvt.internalBorder:40
 URxvt.depth: 32
-24 URxvt.linespace: 0 
-URxvt.letterSpace: 1
-#define termfont      xft:tewi2a:pixelsize=11:antialias=false
-!URxvt.font:           termfont
-!URxvt.boldFont:       xft:Tewi2a:size=11:antialiase=false
-!URxvt.italicFont:     termfont
-!URxvt.boldItalicFont: termfont
-!urxvt*font: xft:gohufont:size=9
-!urxvt*boldFont: xft:gohufont:bold:size=9
-!urxvt*italicFont: xft:gohufont:italic:size=9
-urxvt*font : -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
-urxvt*boldFont : -gohu-gohufont-bold-r-normal--11-80-100-100-c-60-iso10646-1
-uzxvt*italicFont : -gohu-gohufont-bold-r-normal--11-80-100-100-c-60-iso10646-1
+URxvt.linespace: 0 
+URxvt.letterSpace: 0
+!URxvt.font:xft:gohufont:pixelsize=9
+!URxvt.boldFont:xft:gohufont:pixelsize=9
+!URxvt.italicFont:xft:gohufont:italic:pixelsize=9
+URxvt.font:xft:Inconsolata LGC Nerd Font Mono:pixelsize=13
+URxvt.boldFont:xft:Inconsolata LGC Nerd Font Mono:pixelsize=13
+URxvt.italicFont:xft:Inconsolata LGC Nerd Font Mono:italic:pixelsize=13
+!urxvt*font : -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
+!urxvt*boldFont : -gohu-gohufont-bold-r-normal--11-80-100-100-c-60-iso10646-1
+!urxvt*italicFont : -gohu-gohufont-bold-r-normal--11-80-100-100-c-60-iso10646-1
+
+
+
 
 
 !! Common Keybinds for Navigations
@@ -33,10 +34,6 @@ URxvt.keysym.Control-Up: \033[1;5A
 URxvt.keysym.Control-Down: \033[1;5B
 URxvt.keysym.Control-Right: \033[1;5C
 URxvt.keysym.Control-Left: \033[1;5D
-
-!URxvt.*font:                     -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
-!URxvt.*boldFont:                 -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
-!URxvt.*italicFont:               -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
 
 URxvt*background:        #333333
 URxvt*foreground:        #cccccc

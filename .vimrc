@@ -33,6 +33,7 @@ Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'preservim/nerdtree'
 Plug 'https://github.com/ervandew/supertab.git'
 Plug 'vim-vdebug/vdebug'
+Plug 'preservim/nerdcommenter'
 call plug#end()
 
 
