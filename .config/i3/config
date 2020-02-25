@@ -197,7 +197,10 @@ bar {
     }
 }
 
-
+#bar {
+    #i3bar_command ~/.config/i3/lemonbar/i3_lemonbar.sh
+    #tray_output primary
+#}
 bindsym $mod+d exec dmenu_run -i -l 10 -fn '-gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1' -nb "#cccccc" -nf "#333333" -sb "#ff99cc" -sf "#333333" -p ">"
 
 
@@ -206,15 +209,15 @@ for_window [class="^.*"] border pixel 3
 gaps inner 30
 gaps outer 10
 
-bindsym $mod+plus gaps inner current plus 5
-bindsym $mod+minus gaps inner current minus 5
+bindsym $mod+minus gaps inner current plus 5
+bindsym $mod+plus gaps inner current minus 5
 bindsym $mod+Shift+plus gaps outer current plus 5
 bindsym $mod+Shift+minus gaps outer current minus 5
 
-bindsym $mod+Control+plus gaps inner all plus 5
-bindsym $mod+Control+minus gaps inner all minus 5
-bindsym $mod+Control+Shift+plus gaps outer all plus 5
-bindsym $mod+Control+Shift+minus gaps outer all minus 5
+bindsym $mod+Control+minus gaps inner all plus 5
+bindsym $mod+Control+plus gaps inner all minus 5
+bindsym $mod+Control+Shift+minus gaps outer all plus 5
+bindsym $mod+Control+Shift+plus gaps outer all minus 5
 
 #the important one
 # class                 border  backgr. text    indicator child_border
@@ -260,6 +263,6 @@ bindsym $mod+i exec --no-startup-id chromium --incognito
 
 bindsym $mod+m exec --no-startup-id i3bartoggle
 
-bindsym $mod+o exec --no-startup-id rotateWallpaper ~/pics/wallpapers/rotate/
+#bindsym $mod+o exec --no-startup-id rotateWallpaper ~/pics/wallpapers/rotate/
 
 #exec --no-startup-id urxvt -e sh -c "vim ~/infoDesk/money.txt; bash" --class "Floating_urxvt"

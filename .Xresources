@@ -3,28 +3,29 @@
  URxvt*cursorBlink:                    true
  URxvt*pointerBlank:                   true
 
-URxvt.perl-ext-common: default,matcher,-searchable-scrollback
+URxvt.perl-ext-common: default,matcher,-searchable-scrollback,resize-font
 URxvt.url-launcher: /bin/chromium
 URxvt.matcher.button: 1
 
+Xft.autohint: 0
+Xft.antialias: 1
+Xft.hinting: true
+xft.hintstyle: hintslight
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
 
-URxvt.geometry: 90x21 
+URxvt.geometry: 60x17
 URxvt.internalBorder:40
 URxvt.depth: 32
 URxvt.linespace: 0 
 URxvt.letterSpace: 0
-!URxvt.font:xft:gohufont:pixelsize=9
-!URxvt.boldFont:xft:gohufont:pixelsize=9
-!URxvt.italicFont:xft:gohufont:italic:pixelsize=9
-URxvt.font:xft:Inconsolata LGC Nerd Font Mono:pixelsize=13
-URxvt.boldFont:xft:Inconsolata LGC Nerd Font Mono:pixelsize=13
-URxvt.italicFont:xft:Inconsolata LGC Nerd Font Mono:italic:pixelsize=13
-!urxvt*font : -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
-!urxvt*boldFont : -gohu-gohufont-bold-r-normal--11-80-100-100-c-60-iso10646-1
-!urxvt*italicFont : -gohu-gohufont-bold-r-normal--11-80-100-100-c-60-iso10646-1
-
-
-
+URxvt.font: xft:GohuFont:pixelsize=11
+URxvt.boldFont: xft:GohuFont:Regular:pixelsize=11
+URxvt.italicFont: xft:GohuFont:Regular:pixelsize=11
+!URxvt.font:xft:IBM Plex Mono:size=11
+!URxvt.boldFont:xft:IBM Plex Mono:size=11
+!URxvt.italicFont:xft:IBM Plex Mono:italic:size=11
 
 
 !! Common Keybinds for Navigations
@@ -35,33 +36,39 @@ URxvt.keysym.Control-Down: \033[1;5B
 URxvt.keysym.Control-Right: \033[1;5C
 URxvt.keysym.Control-Left: \033[1;5D
 
-URxvt*background:        #333333
-URxvt*foreground:        #cccccc
-URxvt*cursorColor:       #999999
-URxvt*colorBD:           #ffffff
-URxvt*colorUL:           #ffff99
+! special
+*.foreground:   #a3b7c9
+*.background:   #211a22
+*.cursorColor:  #a3b7c9
 
-!BLK
-URxvt*color0:           #666666
-URxvt*color8:           #999999
-!RED
-URxvt*color1:          #CC6699
-URxvt*color9:	        #FF99CC
-!GRN
-URxvt*color2:           #99CC66
-URxvt*color10:         #CCFF99
-!YEL
-URxvt*color3:          #CC9966
-URxvt*color11:         #FFCC99
-!BLU
-URxvt*color4:          #6699CC
-URxvt*color12:         #99CCFF
-!MAG
-URxvt*color5:           #9966CC
-URxvt*color13:          #CC99FF
-!CYN
-URxvt*color6:          #66CC99
-URxvt*color14:         #99FFCC
-!WHT
-URxvt*color7:          #CCCCCC
-URxvt*color15:         #FFFFFF
+! black
+*.color0:       #1e2029
+*.color8:       #242530
+
+! red
+*.color1:       #9893da
+*.color9:       #adacbc
+
+! green
+*.color2:       #815b7c
+*.color10:      #886cb3
+
+! yellow
+*.color3:       #6272a4
+*.color11:      #3358c7
+
+! blue
+*.color4:       #996c93
+*.color12:      #BA86B4
+
+! magenta
+*.color5:       #db5aba
+*.color13:      #f625c2
+
+! cyan
+*.color6:       #5c577a
+*.color14:      #7b72b8
+
+! white
+*.color7:       #476d7a
+*.color15:      #3394b4

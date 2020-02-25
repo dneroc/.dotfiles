@@ -34,16 +34,17 @@ Plug 'preservim/nerdtree'
 Plug 'https://github.com/ervandew/supertab.git'
 Plug 'vim-vdebug/vdebug'
 Plug 'preservim/nerdcommenter'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 
-"set termguicolors
 "map <F1> :NERDTreeToggle<CR>
 "set rtp+=/usr/bin/fzf
 "map <F2> :FZF<CR>
 "map <F3> :Ag 
 
+let g:javascript_plugin_jsdoc = 1
 
-hi StatusLine ctermbg=black ctermfg=grey
-
-
+"set termguicolors
+hi StatusLine ctermbg=none cterm=bold
+"hi Visual term=reverse cterm=reverse guibg=Grey
