@@ -4,7 +4,7 @@
  URxvt*pointerBlank:                   true
 
 URxvt.perl-ext-common: default,matcher,-searchable-scrollback,resize-font
-URxvt.url-launcher: /bin/chromium
+URxvt.url-launcher: /bin/firefox
 URxvt.matcher.button: 1
 
 Xft.autohint: 0

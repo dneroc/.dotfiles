@@ -13,14 +13,15 @@ set autoindent
 set nostartofline
 set ruler
 set visualbell
+set foldmethod=marker
 set t_vb=
 set mouse=a
 set cmdheight =2
 set number
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set expandtab
-set cursorline
+"set cursorline
 set autoread
 set laststatus=2
 au CursorHold  *  checktime
@@ -33,10 +34,13 @@ Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'preservim/nerdtree'
 Plug 'https://github.com/ervandew/supertab.git'
 Plug 'vim-vdebug/vdebug'
+Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
+Plug 'dylanaraps/wal.vim'
 call plug#end()
 
+colorscheme wal
 
 "map <F1> :NERDTreeToggle<CR>
 "set rtp+=/usr/bin/fzf
